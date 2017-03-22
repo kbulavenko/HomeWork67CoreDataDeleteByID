@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		7BAE05DA1E7B0EE900B2F0EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BAE05D91E7B0EE900B2F0EF /* main.m */; };
+		7BAE05E21E7B110600B2F0EF /* MyCoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7BAE05E01E7B110600B2F0EF /* MyCoreDataModel.xcdatamodeld */; };
+		7BAE05E71E7B135100B2F0EF /* MyManagedObjectProductMO+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BAE05E41E7B135100B2F0EF /* MyManagedObjectProductMO+CoreDataProperties.m */; };
+		7BAE05E81E7B135100B2F0EF /* MyManagedObjectProductMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BAE05E61E7B135100B2F0EF /* MyManagedObjectProductMO.m */; };
+		7BAE05EB1E7B155900B2F0EF /* MyDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BAE05EA1E7B155900B2F0EF /* MyDataController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +27,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		19FF1B091E81C8DC00EB8D0C /* Lection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Lection.h; sourceTree = "<group>"; };
 		7BAE05D61E7B0EE900B2F0EF /* Lesson66CoreData */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Lesson66CoreData; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BAE05D91E7B0EE900B2F0EF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7BAE05E11E7B110600B2F0EF /* MyCoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyCoreDataModel.xcdatamodel; sourceTree = "<group>"; };
+		7BAE05E31E7B135100B2F0EF /* MyManagedObjectProductMO+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MyManagedObjectProductMO+CoreDataProperties.h"; sourceTree = "<group>"; };
+		7BAE05E41E7B135100B2F0EF /* MyManagedObjectProductMO+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MyManagedObjectProductMO+CoreDataProperties.m"; sourceTree = "<group>"; };
+		7BAE05E51E7B135100B2F0EF /* MyManagedObjectProductMO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyManagedObjectProductMO.h; sourceTree = "<group>"; };
+		7BAE05E61E7B135100B2F0EF /* MyManagedObjectProductMO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyManagedObjectProductMO.m; sourceTree = "<group>"; };
+		7BAE05E91E7B155900B2F0EF /* MyDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyDataController.h; sourceTree = "<group>"; };
+		7BAE05EA1E7B155900B2F0EF /* MyDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyDataController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,14 @@
 			isa = PBXGroup;
 			children = (
 				7BAE05D91E7B0EE900B2F0EF /* main.m */,
+				7BAE05E01E7B110600B2F0EF /* MyCoreDataModel.xcdatamodeld */,
+				7BAE05E31E7B135100B2F0EF /* MyManagedObjectProductMO+CoreDataProperties.h */,
+				7BAE05E41E7B135100B2F0EF /* MyManagedObjectProductMO+CoreDataProperties.m */,
+				19FF1B091E81C8DC00EB8D0C /* Lection.h */,
+				7BAE05E91E7B155900B2F0EF /* MyDataController.h */,
+				7BAE05EA1E7B155900B2F0EF /* MyDataController.m */,
+				7BAE05E51E7B135100B2F0EF /* MyManagedObjectProductMO.h */,
+				7BAE05E61E7B135100B2F0EF /* MyManagedObjectProductMO.m */,
 			);
 			path = Lesson66CoreData;
 			sourceTree = "<group>";
@@ -118,7 +138,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BAE05E81E7B135100B2F0EF /* MyManagedObjectProductMO.m in Sources */,
+				7BAE05E21E7B110600B2F0EF /* MyCoreDataModel.xcdatamodeld in Sources */,
+				7BAE05E71E7B135100B2F0EF /* MyManagedObjectProductMO+CoreDataProperties.m in Sources */,
 				7BAE05DA1E7B0EE900B2F0EF /* main.m in Sources */,
+				7BAE05EB1E7B155900B2F0EF /* MyDataController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,8 +263,22 @@
 				7BAE05DF1E7B0EE900B2F0EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7BAE05E01E7B110600B2F0EF /* MyCoreDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7BAE05E11E7B110600B2F0EF /* MyCoreDataModel.xcdatamodel */,
+			);
+			currentVersion = 7BAE05E11E7B110600B2F0EF /* MyCoreDataModel.xcdatamodel */;
+			path = MyCoreDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 7BAE05CE1E7B0EE900B2F0EF /* Project object */;
 }
