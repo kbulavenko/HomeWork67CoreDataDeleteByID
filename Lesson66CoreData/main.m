@@ -4,7 +4,7 @@
 //
 //  Created by Константин В. Булавенко on 16.03.17.
 //  Copyright © 2017 Константин В. Булавенко. All rights reserved.
-//
+//    https://github.com/kbulavenko/HomeWork67CoreDataDeleteByID/archive/master.zip
 
 #import <Foundation/Foundation.h>
 #import "MyDataController.h"
@@ -135,15 +135,17 @@ int main(int argc, const char * argv[]) {
         NSFetchRequest   *request2   = [NSFetchRequest fetchRequestWithEntityName:@"Product"];
         
         
+        NSString    *attributeName2  = @"ObjectID";
+        NSString    *attributeValue2  = [NSString stringWithFormat:@"%i", ID];
         
         
+        NSPredicate   *predic2  = [NSPredicate predicateWithFormat:@"id contains %@", attributeValue2];
         
-        
-        //request2.predicate
+      //  request2.predicate   = predic2;
         
         
         NSError   *error2   = nil;
-        NSArray  *results2  = [[MDC managedObjectContext]  executeFetchRequest:request2 error:&error2];
+        NSArray  *results2  = [[MDC managedObjectContext]  executeFetchRequest: request2 error: &error2];
         if(!results2)
         {
             NSLog(@"Error fetching Products objects : %@\n%@", [error2 localizedDescription], [error2 userInfo]);
@@ -161,7 +163,7 @@ int main(int argc, const char * argv[]) {
             {
                 NSLog(@"Удаление");
                 NSLog(@"ID: %@ Name: %@\tPrice : %f\tWeight: %i",strID, product.name, product.price.doubleValue, product.weight.intValue);
-             // [ [MDC managedObjectContext]  deleteObject: [[MDC managedObjectContext] objectWithID: product.objectID    ]];
+              [ [MDC managedObjectContext]  deleteObject: [[MDC managedObjectContext] objectWithID: product.objectID    ]];
                 [ [MDC managedObjectContext]  deleteObject: product];
                 NSError  *error3 = nil;
 
@@ -173,9 +175,6 @@ int main(int argc, const char * argv[]) {
                 {
                     NSLog(@"Saved OK");
                 }
-
-                
-                
                 break;
             }
         }
